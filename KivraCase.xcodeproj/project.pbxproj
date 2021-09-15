@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC226F20C040070E03F /* AppDelegate.swift */; };
+		BC135AC526F20C040070E03F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC426F20C040070E03F /* SceneDelegate.swift */; };
+		BC135AC726F20C040070E03F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC626F20C040070E03F /* ViewController.swift */; };
+		BC135ACA26F20C040070E03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC135AC826F20C040070E03F /* Main.storyboard */; };
+		BC135ACC26F20C080070E03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC135ACB26F20C080070E03F /* Assets.xcassets */; };
+		BC135ACF26F20C080070E03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */; };
+		BC135ADA26F20C090070E03F /* KivraCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AD926F20C090070E03F /* KivraCaseTests.swift */; };
+		BC135AE526F20C090070E03F /* KivraCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AE426F20C090070E03F /* KivraCaseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC135AD626F20C090070E03F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC135AB726F20C040070E03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC135ABE26F20C040070E03F;
+			remoteInfo = KivraCase;
+		};
+		BC135AE126F20C090070E03F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC135AB726F20C040070E03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC135ABE26F20C040070E03F;
+			remoteInfo = KivraCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC135ABF26F20C040070E03F /* KivraCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivraCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC135AC226F20C040070E03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC135AC426F20C040070E03F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC135AC626F20C040070E03F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC135AC926F20C040070E03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC135ACB26F20C080070E03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC135ACE26F20C080070E03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC135AD026F20C080070E03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC135AD526F20C090070E03F /* KivraCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivraCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC135AD926F20C090070E03F /* KivraCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivraCaseTests.swift; sourceTree = "<group>"; };
+		BC135ADB26F20C090070E03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC135AE026F20C090070E03F /* KivraCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivraCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC135AE426F20C090070E03F /* KivraCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivraCaseUITests.swift; sourceTree = "<group>"; };
+		BC135AE626F20C090070E03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC135ABC26F20C040070E03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135AD226F20C090070E03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135ADD26F20C090070E03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC135AB626F20C040070E03F = {
+			isa = PBXGroup;
+			children = (
+				BC135AC126F20C040070E03F /* KivraCase */,
+				BC135AD826F20C090070E03F /* KivraCaseTests */,
+				BC135AE326F20C090070E03F /* KivraCaseUITests */,
+				BC135AC026F20C040070E03F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC135AC026F20C040070E03F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC135ABF26F20C040070E03F /* KivraCase.app */,
+				BC135AD526F20C090070E03F /* KivraCaseTests.xctest */,
+				BC135AE026F20C090070E03F /* KivraCaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC135AC126F20C040070E03F /* KivraCase */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AC226F20C040070E03F /* AppDelegate.swift */,
+				BC135AC426F20C040070E03F /* SceneDelegate.swift */,
+				BC135AC626F20C040070E03F /* ViewController.swift */,
+				BC135AC826F20C040070E03F /* Main.storyboard */,
+				BC135ACB26F20C080070E03F /* Assets.xcassets */,
+				BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */,
+				BC135AD026F20C080070E03F /* Info.plist */,
+			);
+			path = KivraCase;
+			sourceTree = "<group>";
+		};
+		BC135AD826F20C090070E03F /* KivraCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AD926F20C090070E03F /* KivraCaseTests.swift */,
+				BC135ADB26F20C090070E03F /* Info.plist */,
+			);
+			path = KivraCaseTests;
+			sourceTree = "<group>";
+		};
+		BC135AE326F20C090070E03F /* KivraCaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AE426F20C090070E03F /* KivraCaseUITests.swift */,
+				BC135AE626F20C090070E03F /* Info.plist */,
+			);
+			path = KivraCaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC135ABE26F20C040070E03F /* KivraCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC135AE926F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCase" */;
+			buildPhases = (
+				BC135ABB26F20C040070E03F /* Sources */,
+				BC135ABC26F20C040070E03F /* Frameworks */,
+				BC135ABD26F20C040070E03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KivraCase;
+			productName = KivraCase;
+			productReference = BC135ABF26F20C040070E03F /* KivraCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC135AD426F20C090070E03F /* KivraCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC135AEC26F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCaseTests" */;
+			buildPhases = (
+				BC135AD126F20C090070E03F /* Sources */,
+				BC135AD226F20C090070E03F /* Frameworks */,
+				BC135AD326F20C090070E03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC135AD726F20C090070E03F /* PBXTargetDependency */,
+			);
+			name = KivraCaseTests;
+			productName = KivraCaseTests;
+			productReference = BC135AD526F20C090070E03F /* KivraCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC135ADF26F20C090070E03F /* KivraCaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC135AEF26F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCaseUITests" */;
+			buildPhases = (
+				BC135ADC26F20C090070E03F /* Sources */,
+				BC135ADD26F20C090070E03F /* Frameworks */,
+				BC135ADE26F20C090070E03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC135AE226F20C090070E03F /* PBXTargetDependency */,
+			);
+			name = KivraCaseUITests;
+			productName = KivraCaseUITests;
+			productReference = BC135AE026F20C090070E03F /* KivraCaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC135AB726F20C040070E03F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BC135ABE26F20C040070E03F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BC135AD426F20C090070E03F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BC135ABE26F20C040070E03F;
+					};
+					BC135ADF26F20C090070E03F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BC135ABE26F20C040070E03F;
+					};
+				};
+			};
+			buildConfigurationList = BC135ABA26F20C040070E03F /* Build configuration list for PBXProject "KivraCase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC135AB626F20C040070E03F;
+			productRefGroup = BC135AC026F20C040070E03F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC135ABE26F20C040070E03F /* KivraCase */,
+				BC135AD426F20C090070E03F /* KivraCaseTests */,
+				BC135ADF26F20C090070E03F /* KivraCaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC135ABD26F20C040070E03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC135ACF26F20C080070E03F /* LaunchScreen.storyboard in Resources */,
+				BC135ACC26F20C080070E03F /* Assets.xcassets in Resources */,
+				BC135ACA26F20C040070E03F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135AD326F20C090070E03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135ADE26F20C090070E03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC135ABB26F20C040070E03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC135AC726F20C040070E03F /* ViewController.swift in Sources */,
+				BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */,
+				BC135AC526F20C040070E03F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135AD126F20C090070E03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC135ADA26F20C090070E03F /* KivraCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC135ADC26F20C090070E03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC135AE526F20C090070E03F /* KivraCaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC135AD726F20C090070E03F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC135ABE26F20C040070E03F /* KivraCase */;
+			targetProxy = BC135AD626F20C090070E03F /* PBXContainerItemProxy */;
+		};
+		BC135AE226F20C090070E03F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC135ABE26F20C040070E03F /* KivraCase */;
+			targetProxy = BC135AE126F20C090070E03F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC135AC826F20C040070E03F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC135AC926F20C040070E03F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC135ACE26F20C080070E03F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC135AE726F20C090070E03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC135AE826F20C090070E03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC135AEA26F20C090070E03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC135AEB26F20C090070E03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC135AED26F20C090070E03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KivraCase.app/KivraCase";
+			};
+			name = Debug;
+		};
+		BC135AEE26F20C090070E03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KivraCase.app/KivraCase";
+			};
+			name = Release;
+		};
+		BC135AF026F20C090070E03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KivraCase;
+			};
+			name = Debug;
+		};
+		BC135AF126F20C090070E03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KivraCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jebolivarh.KivraCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KivraCase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC135ABA26F20C040070E03F /* Build configuration list for PBXProject "KivraCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC135AE726F20C090070E03F /* Debug */,
+				BC135AE826F20C090070E03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC135AE926F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC135AEA26F20C090070E03F /* Debug */,
+				BC135AEB26F20C090070E03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC135AEC26F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC135AED26F20C090070E03F /* Debug */,
+				BC135AEE26F20C090070E03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC135AEF26F20C090070E03F /* Build configuration list for PBXNativeTarget "KivraCaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC135AF026F20C090070E03F /* Debug */,
+				BC135AF126F20C090070E03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC135AB726F20C040070E03F /* Project object */;
+}
