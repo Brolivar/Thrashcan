@@ -25,6 +25,9 @@
 		BC135B0F26F211C50070E03F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0E26F211C50070E03F /* File.swift */; };
 		BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1026F21B5A0070E03F /* NetworkManager.swift */; };
 		BC135B1426F21E500070E03F /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1326F21E500070E03F /* APIResponses.swift */; };
+		BC135B1726F2596B0070E03F /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */; };
+		BC135B1D26F268B40070E03F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */; };
+		BC135B1F26F26AD40070E03F /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		BC135B0E26F211C50070E03F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		BC135B1026F21B5A0070E03F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BC135B1326F21E500070E03F /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
+		BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				BC135AF726F20D940070E03F /* Storyboards */,
 				BC135AF626F20D670070E03F /* View Models */,
 				BC135AF526F20D5D0070E03F /* View Controllers */,
+				BC135B1526F2592E0070E03F /* Cells */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -206,6 +213,7 @@
 		BC135AF826F20D9A0070E03F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +268,15 @@
 				BC135B1326F21E500070E03F /* APIResponses.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		BC135B1526F2592E0070E03F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */,
+				BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +415,10 @@
 				BC135B0626F211030070E03F /* ReceiptsViewModel.swift in Sources */,
 				BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */,
 				BC135B1426F21E500070E03F /* APIResponses.swift in Sources */,
+				BC135B1F26F26AD40070E03F /* ReceiptTableViewCell.swift in Sources */,
+				BC135B1726F2596B0070E03F /* DocumentTableViewCell.swift in Sources */,
 				BC135AFE26F20E540070E03F /* Document.swift in Sources */,
+				BC135B1D26F268B40070E03F /* DateFormatterExtensions.swift in Sources */,
 				BC135B0F26F211C50070E03F /* File.swift in Sources */,
 				BC135AC726F20C040070E03F /* FileListViewController.swift in Sources */,
 				BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */,

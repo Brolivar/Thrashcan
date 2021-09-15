@@ -9,7 +9,15 @@ import Foundation
 
 protocol FileControllerProtocol {
     func requestFiles(completion: @escaping () -> Void)
+    func typeOfFileAt(index: Int) -> FileType?
+    func fileAt(index: Int) -> FileItem?
     func count() -> Int
+}
+
+// Classify elements within our Datasource
+enum FileType {
+    case Document
+    case Receipt
 }
 
 // Main view model
@@ -26,6 +34,26 @@ class FileViewModel {
 
 // MARK: - FileControllerProtocol extension
 extension FileViewModel: FileControllerProtocol {
+
+    func fileAt(index: Int) -> FileItem? {
+        if index < self.fileList.count {
+            return self.fileList[index]
+        } else {
+            print("Error: file index out of bounds.")
+            return .none
+        }
+
+    }
+
+    func typeOfFileAt(index: Int) -> FileType? {
+        if self.fileList[index] is Document {
+            return .Document
+        } else if self.fileList[index] is Receipt {
+            return .Receipt
+        } else {
+            return .none
+        }
+    }
 
     func count() -> Int {
         return self.fileList.count
