@@ -23,9 +23,17 @@ enum FileType {
 }
 
 // In order to organize the files by month, we need to create different sections containing title and a list of files for that month
-struct MonthSection {
+// Note: we use a class due to the need of identity control when sorting internally (by day&month)
+class MonthSection {
+
+    // MARK: - Properties
     var title: String
     var files: [FileItem]
+
+    init(title: String, files: [FileItem]) {
+        self.title = title
+        self.files = files
+    }
 }
 
 // Main view model
@@ -54,6 +62,12 @@ class FileViewModel {
 
         // Once grouped and sorted, it is ready to be presented on the tableview
         let sections = sortedDictionary.map { MonthSection(title: dateFormatter.string(from: $0.key), files: $0.value) }
+
+        // Finally, we sort internally each section/month files by day
+        for section in sections {
+            section.files.sort(by: { $0.date < $1.date })
+        }
+
         self.fileSections = sections
     }
 
