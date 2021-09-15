@@ -6,7 +6,28 @@
 //
 
 import Foundation
-//
-//struct APIDocumentsResponse: Codable {
-//    let documentList: Document
-//}
+
+// 'Bridge' model between our App's model and the API response.
+
+struct APIReceiptResponse: Codable {
+    let resultsNumber: Int
+    let receiptList: [singleReceiptResponse]
+
+    enum CodingKeys: String, CodingKey {
+        case resultsNumber = "total"
+        case receiptList = "receipts"
+    }
+}
+
+
+struct singleReceiptResponse: Codable {
+    let title: String
+    let date: String
+    let receiptKind: String
+
+    enum CodingKeys: String, CodingKey {
+        case title = "store_name"
+        case date = "purchase_date"
+        case receiptKind = "type"
+    }
+}

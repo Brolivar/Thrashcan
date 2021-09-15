@@ -9,14 +9,13 @@ import Foundation
 
 // Privacy is accomplished by injecting an abstraction     // 'DocumentsControllerProtocol' rather of a type 'DocumentsViewModel'
 protocol DocumentsControllerProtocol {
-
     func requestDocuments(completion: @escaping (Bool) -> Void)
 }
 
 class DocumentsViewModel {
 
     // MARK: - Properties
-    private var documents: [Document] = []
+    private var documents: [DocumentProtocol] = []
     private var networkManager: NetworkControllerProtocol = NetworkManager()
 
 }
