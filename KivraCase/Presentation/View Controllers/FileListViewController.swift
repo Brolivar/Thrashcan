@@ -28,7 +28,6 @@ class FileListViewController: UIViewController {
 
     }
 
-
 }
 
 // MARK: - UITableViewDelegate Extension
@@ -36,19 +35,30 @@ extension FileListViewController: UITableViewDelegate {}
 
 // MARK: - UITableViewDataSource Extension
 extension FileListViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.fileManager.count()
+        return self.fileManager.getSectionAt(section).files.count
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.fileManager.getNumberOfSections()
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.fileManager.getSectionAt(section).title
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if let cellType = self.fileManager.typeOfFileAt(index: indexPath.row) {
+        let indexRow = indexPath.row
+        let indexSection = indexPath.section
 
+        if let cellType = self.fileManager.typeOfFileAt(indexSection: indexSection, indexRow: indexRow) {
             switch cellType {
             case .Document:
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DocumentTableViewCell.self), for: indexPath) as? DocumentTableViewCell
                 else { return UITableViewCell() }
-                if let file = self.fileManager.fileAt(index: indexPath.row) as? DocumentProtocol {
+                if let file = self.fileManager.fileAt(indexSection: indexSection, indexRow: indexRow) as? DocumentProtocol {
                     cell.configure(from: file)
                     return cell
                 } else {
@@ -57,7 +67,7 @@ extension FileListViewController: UITableViewDataSource {
             case .Receipt:
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ReceiptTableViewCell.self), for: indexPath) as? ReceiptTableViewCell
                 else { return UITableViewCell() }
-                if let file = self.fileManager.fileAt(index: indexPath.row) as? ReceiptProtocol {
+                if let file = self.fileManager.fileAt(indexSection: indexSection, indexRow: indexRow) as? ReceiptProtocol {
                     cell.configure(from: file)
                     return cell
                 } else {
