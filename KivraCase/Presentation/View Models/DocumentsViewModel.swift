@@ -9,7 +9,7 @@ import Foundation
 
 // Privacy is accomplished by injecting an abstraction     // 'DocumentsControllerProtocol' rather of a type 'DocumentsViewModel'
 protocol DocumentsControllerProtocol {
-    func requestDocuments(completion: @escaping (Bool) -> Void)
+    func requestDocuments(completion: @escaping ([Document]?) -> Void)
 }
 
 class DocumentsViewModel {
@@ -23,17 +23,17 @@ class DocumentsViewModel {
 // MARK: - DocumentsControllerProtocol extension
 extension DocumentsViewModel: DocumentsControllerProtocol {
 
-    func requestDocuments(completion: @escaping (Bool) -> Void) {
+    func requestDocuments(completion: @escaping ([Document]?) -> Void) {
         self.networkManager.downloadDocumentData { [weak self] result in
             guard let `self` = self else { return }
             switch result {
                 case .success(let documentList):
                     print("Documents request successfully")
                     self.documents = documentList
-                    completion(true)
+                    completion(documentList)
                  case .failure(let error):
                     print("Documents request failed: ", error)
-                    completion(false)
+                    completion(.none)
                 }
             }
     }
