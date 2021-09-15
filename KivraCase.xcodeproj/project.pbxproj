@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC226F20C040070E03F /* AppDelegate.swift */; };
 		BC135AC526F20C040070E03F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC426F20C040070E03F /* SceneDelegate.swift */; };
-		BC135AC726F20C040070E03F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC626F20C040070E03F /* ViewController.swift */; };
+		BC135AC726F20C040070E03F /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AC626F20C040070E03F /* FileListViewController.swift */; };
 		BC135ACA26F20C040070E03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC135AC826F20C040070E03F /* Main.storyboard */; };
 		BC135ACC26F20C080070E03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC135ACB26F20C080070E03F /* Assets.xcassets */; };
 		BC135ACF26F20C080070E03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */; };
 		BC135ADA26F20C090070E03F /* KivraCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AD926F20C090070E03F /* KivraCaseTests.swift */; };
 		BC135AE526F20C090070E03F /* KivraCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AE426F20C090070E03F /* KivraCaseUITests.swift */; };
+		BC135AFE26F20E540070E03F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135AFD26F20E540070E03F /* Document.swift */; };
+		BC135B0126F20E6F0070E03F /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0026F20E6F0070E03F /* Receipt.swift */; };
+		BC135B0426F210E60070E03F /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0326F210E60070E03F /* DocumentsViewModel.swift */; };
+		BC135B0626F211030070E03F /* ReceiptsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0526F211030070E03F /* ReceiptsViewModel.swift */; };
+		BC135B0926F2111C0070E03F /* FilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0826F2111C0070E03F /* FilesViewModel.swift */; };
+		BC135B0C26F211840070E03F /* Receipts.json in Resources */ = {isa = PBXBuildFile; fileRef = BC135B0A26F211840070E03F /* Receipts.json */; };
+		BC135B0D26F211840070E03F /* Documents.json in Resources */ = {isa = PBXBuildFile; fileRef = BC135B0B26F211840070E03F /* Documents.json */; };
+		BC135B0F26F211C50070E03F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B0E26F211C50070E03F /* File.swift */; };
+		BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1026F21B5A0070E03F /* NetworkManager.swift */; };
+		BC135B1426F21E500070E03F /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1326F21E500070E03F /* APIResponses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 		BC135ABF26F20C040070E03F /* KivraCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivraCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC135AC226F20C040070E03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC135AC426F20C040070E03F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC135AC626F20C040070E03F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC135AC626F20C040070E03F /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
 		BC135AC926F20C040070E03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC135ACB26F20C080070E03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC135ACE26F20C080070E03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		BC135AE026F20C090070E03F /* KivraCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivraCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC135AE426F20C090070E03F /* KivraCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivraCaseUITests.swift; sourceTree = "<group>"; };
 		BC135AE626F20C090070E03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC135AFD26F20E540070E03F /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		BC135B0026F20E6F0070E03F /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		BC135B0326F210E60070E03F /* DocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
+		BC135B0526F211030070E03F /* ReceiptsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViewModel.swift; sourceTree = "<group>"; };
+		BC135B0826F2111C0070E03F /* FilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewModel.swift; sourceTree = "<group>"; };
+		BC135B0A26F211840070E03F /* Receipts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Receipts.json; path = "../../../../../../iOS case files/JSON/Receipts.json"; sourceTree = "<group>"; };
+		BC135B0B26F211840070E03F /* Documents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Documents.json; path = "../../../../../../iOS case files/JSON/Documents.json"; sourceTree = "<group>"; };
+		BC135B0E26F211C50070E03F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BC135B1026F21B5A0070E03F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BC135B1326F21E500070E03F /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +119,10 @@
 		BC135AC126F20C040070E03F /* KivraCase */ = {
 			isa = PBXGroup;
 			children = (
-				BC135AC226F20C040070E03F /* AppDelegate.swift */,
-				BC135AC426F20C040070E03F /* SceneDelegate.swift */,
-				BC135AC626F20C040070E03F /* ViewController.swift */,
-				BC135AC826F20C040070E03F /* Main.storyboard */,
+				BC135AF226F20D300070E03F /* Support */,
+				BC135AF326F20D3D0070E03F /* Presentation */,
+				BC135AF426F20D430070E03F /* Main */,
 				BC135ACB26F20C080070E03F /* Assets.xcassets */,
-				BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */,
 				BC135AD026F20C080070E03F /* Info.plist */,
 			);
 			path = KivraCase;
@@ -126,6 +144,122 @@
 				BC135AE626F20C090070E03F /* Info.plist */,
 			);
 			path = KivraCaseUITests;
+			sourceTree = "<group>";
+		};
+		BC135AF226F20D300070E03F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AC226F20C040070E03F /* AppDelegate.swift */,
+				BC135AC426F20C040070E03F /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BC135AF326F20D3D0070E03F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AF926F20DA80070E03F /* Protocols */,
+				BC135AF826F20D9A0070E03F /* Extensions */,
+				BC135AF726F20D940070E03F /* Storyboards */,
+				BC135AF626F20D670070E03F /* View Models */,
+				BC135AF526F20D5D0070E03F /* View Controllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BC135AF426F20D430070E03F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AFB26F20DB50070E03F /* Objects */,
+				BC135AFA26F20DAF0070E03F /* Networking */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BC135AF526F20D5D0070E03F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AC626F20C040070E03F /* FileListViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BC135AF626F20D670070E03F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B0826F2111C0070E03F /* FilesViewModel.swift */,
+				BC135B0326F210E60070E03F /* DocumentsViewModel.swift */,
+				BC135B0526F211030070E03F /* ReceiptsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BC135AF726F20D940070E03F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AC826F20C040070E03F /* Main.storyboard */,
+				BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC135AF826F20D9A0070E03F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC135AF926F20DA80070E03F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC135AFA26F20DAF0070E03F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B1226F21E400070E03F /* Objects */,
+				BC135B0226F20ED00070E03F /* Resources */,
+				BC135B1026F21B5A0070E03F /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC135AFB26F20DB50070E03F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BC135AFC26F20E410070E03F /* Protocols */,
+				BC135AFD26F20E540070E03F /* Document.swift */,
+				BC135B0026F20E6F0070E03F /* Receipt.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		BC135AFC26F20E410070E03F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B0E26F211C50070E03F /* File.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC135B0226F20ED00070E03F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B0B26F211840070E03F /* Documents.json */,
+				BC135B0A26F211840070E03F /* Receipts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC135B1226F21E400070E03F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BC135B1326F21E500070E03F /* APIResponses.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +365,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC135B0C26F211840070E03F /* Receipts.json in Resources */,
 				BC135ACF26F20C080070E03F /* LaunchScreen.storyboard in Resources */,
 				BC135ACC26F20C080070E03F /* Assets.xcassets in Resources */,
 				BC135ACA26F20C040070E03F /* Main.storyboard in Resources */,
+				BC135B0D26F211840070E03F /* Documents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +394,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC135AC726F20C040070E03F /* ViewController.swift in Sources */,
+				BC135B0126F20E6F0070E03F /* Receipt.swift in Sources */,
+				BC135B0626F211030070E03F /* ReceiptsViewModel.swift in Sources */,
+				BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */,
+				BC135B1426F21E500070E03F /* APIResponses.swift in Sources */,
+				BC135AFE26F20E540070E03F /* Document.swift in Sources */,
+				BC135B0F26F211C50070E03F /* File.swift in Sources */,
+				BC135AC726F20C040070E03F /* FileListViewController.swift in Sources */,
 				BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */,
 				BC135AC526F20C040070E03F /* SceneDelegate.swift in Sources */,
+				BC135B0926F2111C0070E03F /* FilesViewModel.swift in Sources */,
+				BC135B0426F210E60070E03F /* DocumentsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDQ2G3PC42;
 				INFOPLIST_FILE = KivraCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDQ2G3PC42;
 				INFOPLIST_FILE = KivraCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
