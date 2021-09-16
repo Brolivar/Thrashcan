@@ -11,7 +11,7 @@ The trash can is sorted by date, oldest first; sectioned by month.
 - Currently the app is using a simple **MVVM** structure, having one main ```FileViewModel``` that will serve the information to the trash can,
 and two ViewModels to manage specifically **documents** and **receipts**.
 
-- In order to make it as maintainable as possible, a generic ```ItemType``` protocol was created, containing the shared logic between ```Receipts``` and ```Documents```, 
+- In order to make it as maintainable as possible, a generic ```FileType``` protocol was created, containing the shared logic between ```Receipts``` and ```Documents```, 
 while also allowing us to extend specific logic for each one. This is really useful in order to have one ViewModel that will display all types of files.
 
 - A layer of networking has been created as well, despite not using any API (just the provided JSON files).
