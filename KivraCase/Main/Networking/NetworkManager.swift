@@ -9,8 +9,8 @@ import Foundation
 
 
 protocol NetworkControllerProtocol: AnyObject {
-    func downloadDocumentData(completion: @escaping (Result<[Document], NetworkError>) -> Void)
-    func downloadReceiptData(completion: @escaping (Result<[Receipt], NetworkError>) -> Void)
+    func downloadDocumentData(completion: @escaping (Result<[DocumentProtocol], NetworkError>) -> Void)
+    func downloadReceiptData(completion: @escaping (Result<[ReceiptProtocol], NetworkError>) -> Void)
 }
 
 // Error tracking for the API request:
@@ -24,16 +24,14 @@ enum NetworkError: Error {
 class NetworkManager {}
 
 extension NetworkManager: NetworkControllerProtocol {
-    func downloadDocumentData(completion: @escaping (Result<[Document], NetworkError>) -> Void) {
-
-        var documentList: [Document] = []
+    func downloadDocumentData(completion: @escaping (Result<[DocumentProtocol], NetworkError>) -> Void) {
+        var documentList: [DocumentProtocol] = []
         // On a real scenario here we would use URLSession datatask
         let bundle = Bundle(for: type(of: self))
         guard let url = bundle.url(forResource: "Documents", withExtension: "json") else {
             completion(.failure(.requestError))
             return
         }
-
         do {
             let responseData = try Data(contentsOf: url)
             documentList = try JSONDecoder().decode([Document].self, from: responseData)
@@ -48,8 +46,7 @@ extension NetworkManager: NetworkControllerProtocol {
         }
     }
 
-    func downloadReceiptData(completion: @escaping (Result<[Receipt], NetworkError>) -> Void) {
-
+    func downloadReceiptData(completion: @escaping (Result<[ReceiptProtocol], NetworkError>) -> Void) {
         var receiptList: [Receipt] = []
         // On a real scenario here we would use URLSession datatask
         let bundle = Bundle(for: type(of: self))

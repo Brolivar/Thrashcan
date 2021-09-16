@@ -31,11 +31,10 @@ class ReceiptTableViewCell: UITableViewCell {
     }
 
     func configure(from document: ReceiptProtocol) {
-        self.titleLabel.text = document.getTitle()
-
+        self.titleLabel.text = document.title
         let dateFormatter = DateFormatter()
         // Change to a more readable format
-        if let date = dateFormatter.dateFromMultipleFormats(fromString: document.getDate()) {
+        if let date = dateFormatter.dateFromMultipleFormats(fromString: document.date) {
             dateFormatter.dateFormat = "d MMM yyyy"
             dateFormatter.string(from: date)
             self.dateLabel.text = dateFormatter.string(from: date)
@@ -47,8 +46,10 @@ class ReceiptTableViewCell: UITableViewCell {
         case .returnType:
             self.typeLabel.isHidden = false
             self.typeLabel.text = ReceiptType.returnType.typeLabel
+            break
         case .sale:
             self.typeLabel.isHidden = true
+            break
         }
     }
 }

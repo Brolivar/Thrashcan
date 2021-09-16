@@ -25,7 +25,6 @@ enum FileType {
 // In order to organize the files by month, we need to create different sections containing title and a list of files for that month
 // Note: we use a class due to the need of identity control when sorting internally (by day&month)
 class MonthSection {
-
     // MARK: - Properties
     var title: String
     var files: [FileItem]
@@ -38,7 +37,6 @@ class MonthSection {
 
 // Main view model
 class FileViewModel {
-
     // MARK: - Properties
     private var fileList: [FileItem] = []
     private var fileSections: [MonthSection] = []
@@ -52,7 +50,6 @@ class FileViewModel {
     private func groupFilesByDate() {
         // We get the dictionary of grouped -> date: [FileItems]
         let groupedDictionary = self.groupedFilesByMonth()
-
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM yyyy"
         dateFormatter.timeZone = .current
@@ -73,7 +70,6 @@ class FileViewModel {
 
     // Retrieve a grouped by date dictionary from our files array
     private func groupedFilesByMonth() -> [Date: [FileItem]] {
-
         let groupedDictionary: [Date: [FileItem]] = [:]
         return self.fileList.reduce(into: groupedDictionary) { acc, cur in
 
@@ -127,7 +123,6 @@ extension FileViewModel: FileControllerProtocol {
 
     // Request documents and receipts, and finish once both request finish
     func requestFiles(completion: @escaping () -> Void) {
-
         // We use operation queues to manage both async requests, and the finish condition
         let operationQueue = OperationQueue()
         let documentRequest = BlockOperation {

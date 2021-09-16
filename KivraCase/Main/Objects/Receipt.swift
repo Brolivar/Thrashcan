@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol ReceiptProtocol {
-    func getTitle() -> String
-    func getDate() -> String
+protocol ReceiptProtocol: FileItem {
     func getReceiptKind() -> ReceiptType
 }
 
@@ -18,7 +16,6 @@ enum ReceiptType {
     case returnType
     case sale
     // ... //
-
     var typeLabel: String {
         switch self {
         case .returnType:
@@ -31,16 +28,14 @@ enum ReceiptType {
 
 // By abstracting the Receipt into a protocol we ensure the whole object is not shared,
 // only the protocol with the functions to read or write, which is way safer.
-struct Receipt: FileItem {
-
-    internal var title: String  // declared internal because it matches a requirement in internal protoco
-    internal var date: String
-//    internal var logo: String       // This could be a URL returned from the API, but for now it's a static UI Symbol
+struct Receipt {
+    private var storeName: String
+    private var purchaseDate: String
     private var receiptKind: ReceiptType
 
     init(title: String, date: String, receiptKind: ReceiptType) {
-        self.title = title
-        self.date = date
+        self.storeName = title
+        self.purchaseDate = date
         self.receiptKind = receiptKind
     }
 }
@@ -48,12 +43,12 @@ struct Receipt: FileItem {
 
 // MARK: - ReceiptProtocol Extension
 extension Receipt: ReceiptProtocol {
-    func getTitle() -> String {
-        return self.title
+    var title: String {
+        return self.storeName
     }
 
-    func getDate() -> String {
-        return self.date
+    var date: String {
+        return self.purchaseDate
     }
 
     func getReceiptKind() -> ReceiptType {

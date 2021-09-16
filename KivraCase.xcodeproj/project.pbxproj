@@ -26,8 +26,11 @@
 		BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1026F21B5A0070E03F /* NetworkManager.swift */; };
 		BC135B1426F21E500070E03F /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1326F21E500070E03F /* APIResponses.swift */; };
 		BC135B1726F2596B0070E03F /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */; };
-		BC135B1D26F268B40070E03F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */; };
+		BC135B1D26F268B40070E03F /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1C26F268B40070E03F /* DateFormatter+Extensions.swift */; };
 		BC135B1F26F26AD40070E03F /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */; };
+		BCCC019426F361D700BBC8AF /* Spinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCC019326F361D700BBC8AF /* Spinner.xib */; };
+		BCCC019626F362EB00BBC8AF /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC019526F362EB00BBC8AF /* Spinner.swift */; };
+		BCCC019826F3649000BBC8AF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC019726F3649000BBC8AF /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +76,11 @@
 		BC135B1026F21B5A0070E03F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BC135B1326F21E500070E03F /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
 		BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
-		BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		BC135B1C26F268B40070E03F /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		BCCC019326F361D700BBC8AF /* Spinner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Spinner.xib; sourceTree = "<group>"; };
+		BCCC019526F362EB00BBC8AF /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		BCCC019726F3649000BBC8AF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,12 +170,11 @@
 		BC135AF326F20D3D0070E03F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				BC135AF926F20DA80070E03F /* Protocols */,
 				BC135AF826F20D9A0070E03F /* Extensions */,
 				BC135AF726F20D940070E03F /* Storyboards */,
 				BC135AF626F20D670070E03F /* View Models */,
 				BC135AF526F20D5D0070E03F /* View Controllers */,
-				BC135B1526F2592E0070E03F /* Cells */,
+				BC135B1526F2592E0070E03F /* Views */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			children = (
 				BC135AC826F20C040070E03F /* Main.storyboard */,
 				BC135ACD26F20C080070E03F /* LaunchScreen.storyboard */,
+				BCCC019326F361D700BBC8AF /* Spinner.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -213,16 +219,10 @@
 		BC135AF826F20D9A0070E03F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BC135B1C26F268B40070E03F /* DateFormatterExtensions.swift */,
+				BC135B1C26F268B40070E03F /* DateFormatter+Extensions.swift */,
+				BCCC019726F3649000BBC8AF /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BC135AF926F20DA80070E03F /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		BC135AFA26F20DAF0070E03F /* Networking */ = {
@@ -270,13 +270,14 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		BC135B1526F2592E0070E03F /* Cells */ = {
+		BC135B1526F2592E0070E03F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BC135B1626F2596B0070E03F /* DocumentTableViewCell.swift */,
 				BC135B1E26F26AD40070E03F /* ReceiptTableViewCell.swift */,
+				BCCC019526F362EB00BBC8AF /* Spinner.swift */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +386,7 @@
 				BC135B0C26F211840070E03F /* Receipts.json in Resources */,
 				BC135ACF26F20C080070E03F /* LaunchScreen.storyboard in Resources */,
 				BC135ACC26F20C080070E03F /* Assets.xcassets in Resources */,
+				BCCC019426F361D700BBC8AF /* Spinner.xib in Resources */,
 				BC135ACA26F20C040070E03F /* Main.storyboard in Resources */,
 				BC135B0D26F211840070E03F /* Documents.json in Resources */,
 			);
@@ -415,10 +417,12 @@
 				BC135B0626F211030070E03F /* ReceiptsViewModel.swift in Sources */,
 				BC135B1126F21B5A0070E03F /* NetworkManager.swift in Sources */,
 				BC135B1426F21E500070E03F /* APIResponses.swift in Sources */,
+				BCCC019626F362EB00BBC8AF /* Spinner.swift in Sources */,
 				BC135B1F26F26AD40070E03F /* ReceiptTableViewCell.swift in Sources */,
+				BCCC019826F3649000BBC8AF /* UIView+Extensions.swift in Sources */,
 				BC135B1726F2596B0070E03F /* DocumentTableViewCell.swift in Sources */,
 				BC135AFE26F20E540070E03F /* Document.swift in Sources */,
-				BC135B1D26F268B40070E03F /* DateFormatterExtensions.swift in Sources */,
+				BC135B1D26F268B40070E03F /* DateFormatter+Extensions.swift in Sources */,
 				BC135B0F26F211C50070E03F /* File.swift in Sources */,
 				BC135AC726F20C040070E03F /* FileListViewController.swift in Sources */,
 				BC135AC326F20C040070E03F /* AppDelegate.swift in Sources */,

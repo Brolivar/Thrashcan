@@ -10,11 +10,10 @@ import Foundation
 
 // Privacy is accomplished by injecting an abstraction     // 'ReceiptsControllerProtocol' rather of a type 'ReceiptsViewModel'
 protocol ReceiptsControllerProtocol {
-    func requestReceipts(completion: @escaping ([Receipt]?) -> Void)
+    func requestReceipts(completion: @escaping ([ReceiptProtocol]?) -> Void)
 }
 
 class ReceiptsViewModel {
-
     // MARK: - Properties
     private var receipts: [ReceiptProtocol] = []
     private var networkManager: NetworkControllerProtocol = NetworkManager()
@@ -23,8 +22,7 @@ class ReceiptsViewModel {
 
 // MARK: - ReceiptsControllerProtocol extension
 extension ReceiptsViewModel: ReceiptsControllerProtocol {
-
-    func requestReceipts(completion: @escaping ([Receipt]?) -> Void) {
+    func requestReceipts(completion: @escaping ([ReceiptProtocol]?) -> Void) {
         self.networkManager.downloadReceiptData { [weak self] result in
             guard let `self` = self else { return }
             switch result {

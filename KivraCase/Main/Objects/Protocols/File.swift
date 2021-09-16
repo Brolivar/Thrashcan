@@ -12,5 +12,4 @@ import Foundation
 protocol FileItem {
     var title: String { get }
     var date: String { get }
-//    var logo: String { get }
 }
